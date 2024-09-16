@@ -4,20 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>media_tags</title>
+<style>
+    #container{
+       margin: 100px;
+        width: 65;
+        height: 45vh;
+        border: 10px solid;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        border-radius: 30px;
+ 
 
+    }
+    #container>div {
+        /* background-color: #e94343; */
+     border: 2px;
+       /* display: flex; */
+     justify-content: center;
+     align-items: center;
+     display: grid; 
+    
+        place-items: center; /* Add this line */
+        font-size: 40px;
+
+      
+      
+        
+    }
+    /* #container >:only-of-type(2){
+        grid-column-start: 2;
+        grid-column-end: 4;
+    } */
+
+</style>
 </head>
 <body>
-    <img src="../coins.png" alt="nothing"
+    <!-- <img src="../coins.png" alt="nothing"
     height="400">
     <br>
     <hr>
     <div>
-    <video src="../task03.mp4" width="540px" controls loop ></video></div>
+    <video src="../task03.mp4" width="54px" controls loop ></video></div>
     <br><hr>
     <iframe src="../task03.mp4" frameborder="0" width="80%" height="540px" loop></iframe>
-    <br><hr>
+    <br><hr> -->
+<!-- <div id="container">
+    <canvas id="canvas" width="540px" height="400px"></canvas>
+</div> -->
 
-
+<div id="container">
+	<div class="d1">1</div>
+	<div class="d1">2</div>
+	<div class="d1">3</div>
+	<div class="d1">4</div>	
+</div>
 </body>
 </html>
 

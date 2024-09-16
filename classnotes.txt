@@ -1,3 +1,18 @@
 1. code tag : for showing codes.
 &nbsp= for giving a unit white space
 &lt ''''''%gt= for showing the attribute
+lecture 13
+display =grid;
+grid-template-columns:1fr 2fr 3fr;
+grid-template-rows:1fr 2fr 3fr;
+grid-template-columns: repeat(4,1fr);
+grid-columns-start: 2; // for stretching a columns.
+grid-columns-end: 4;//same for rows
+
+#media query
+
+@media (width <1020px){
+    h1{
+background-color: #ffffff;
+    }
+}
