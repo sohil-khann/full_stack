@@ -22,3 +22,11 @@
  console.log(str1.replaceAll("is","si"));
 
 console.log(str.split(" "));// convert string to array 
+// destrusctive methods : all cjanges relects in main var
+
+const arr=[1,2,3,45,6,7]
+arr.push(8)
+console.log(arr);
+const a=arr.pop()
+const str2=arr.join(" ");// it converts array to String
+console.log(str2);
