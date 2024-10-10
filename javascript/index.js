@@ -30,3 +30,21 @@ console.log(arr);
 const a=arr.pop()
 const str2=arr.join(" ");// it converts array to String
 console.log(str2);
+
+let newarr=["this","is","new","array"];
+let combined=newarr.concat(["hi","hello"],arr);
+console.log(combined);
+
+let rev=arr.reverse()
+console.log(arr.sort());
+
+//////////////////////Loop///////////////Loop//////////////////////////////Loop/////////////////////////////////
+//for loop
+
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+//for of loop
+for(let item of arr){
+console.log(item);
+}
