@@ -6,7 +6,7 @@ const PORT = 3000;
 // console.log(app);
 // console.log(express)
 
-app.use(express.json());
+app.use(express.json()); // this trigger the every endpoint globally 
 
 
 app.get(`/`, (req, res) => {
