@@ -5,7 +5,11 @@
     "postcss-nesting": "^13.0.0",
     "tailwindcss": "^3.4.11"
   },
+  "scripts": {
+    "start": "nodemon building_http.js"
+  },
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "url": "^0.11.4"
   }
 }
