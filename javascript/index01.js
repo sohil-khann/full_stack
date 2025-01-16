@@ -422,3 +422,45 @@
 
 //      DOM=> Document Object Model => running Html me aagar kuch bhi change karna he to vo DOM se karte he 
 // Document -> html code with css in the form of an object
+
+// //DOM=> Document Object Model => running Html me aagar kuch bhi change karna he to vo DOM se karte he 
+// // Document -> html code with css in the form of an object 
+
+// // selectors  
+// // 1. getElementById -> single element 
+// // 2. getElementsByClassName -> html collections - like list 
+// // 3. getElementsByTagName -> html collections - like list 
+// // 4. queryselectors -> first matching element 
+// // 5.queryselectorsAll -> all matching element - node list ke form me 
+
+// h1 = document.getElementById("head");
+// // console.log(h1);
+
+// const paraByClass = document.getElementsByClassName("para");
+// // console.log(paraByClass);
+// // console.log(paraByClass[0]);
+
+// const paraBytagName = document.getElementsByTagName("p");
+// // console.log(paraBytagName);
+
+// const h1Byquery = document.querySelector("#head");
+// // console.log(h1Byquery);
+
+// const parabyqueryall = document.querySelectorAll(".para");
+// // console.log(parabyqueryall);
+// // how to read different properties of tag 
+
+// // console.log(h1.innerText);
+// // console.log(h1.innerHTML);
+// // console.log(h1.textContent); // don't ingnore white space 
+// // console.log(h1.outerHTML);
+
+// console.log(h1.id); // return id of h1 
+// console.log(h1.className); // return className of h1 
+//                                          event listener
+
+// addEventListener -> to attach an event(any action by the user ) to an element
+// const btn = document.getElementById("con");
+// btn.addEventListener("click",()=>{
+//     document.getElementById("head").innerText = "hello";
+// })
