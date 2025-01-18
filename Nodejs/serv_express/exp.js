@@ -1,6 +1,7 @@
 const express = require(`express`);
 const app = express();
 const PORT = 3000;
+const path=require(`path`)
 
 // console.log(express);
 // console.log(app);
@@ -9,9 +10,10 @@ const PORT = 3000;
 app.use(express.json()); // this trigger the every endpoint globally 
 
 
+
 app.get(`/`, (req, res) => {
-  // express.json();
-  //   res.send(`<h1>Hello client!!!</h1>`);
+  express.json();
+    res.send(`<h1>Hello client!!!</h1>`);
 });
 
 // Params
@@ -31,7 +33,8 @@ app.get(`/query`, (req, res) => {
     `<h1>My name is ${req.query.name} and I live in ${req.query.place}</h1>`
   );
 });
-
+app
 app.listen(PORT, () => {
   console.log(`Server is up and running at http://localhost:${PORT}`);
 });
+
