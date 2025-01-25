@@ -25,14 +25,44 @@ app.get('/',(req, res)=>{
     app.get('/create',async (req, res)=>{
         
     let createduser=   await userModel.create({
-            name:"sohil",
-            email:"@khsnv43",
-            username: "khan07"
+            name:"tanuj",
+            email:"@khsfgb43",
+            username: "tanushr7"
 
         })
 res.send(createduser);
+
          });
-         
+         ///////////////////////////
+        app.get('/read', async (req, res) => {
+            // const user = await userModel.findOne({ name: req.params.name });
+            const user = await userModel.find();
+
+            if (!user) {
+                return res.status(404).send("User not found");
+            }
+            res.send(user);
+        });
+
+        //////////////////////////
+        app.get('/update/:name/:forchanging', async (req, res) => {
+            const user = await userModel.findOneAndUpdate({ name: req.params.name }, { name:req.params.forchanging},{new:true});
+            if (!user) {
+                return res.status(404).send("User not found");
+            }
+            res.send(user);
+        });
+
+//////////////////////
+        app.get('/delete/:name', async (req, res) => {
+            const user = await userModel.findOneAndDelete({ name: req.params.name });
+            if (!user) {
+                return res.status(404).send("User not found");
+            }
+            res.send("..User deleted");
+        });
+
+        ////////////////
 //run when server is busy :  Get-Process -Id (Get-NetTCPConnection -LocalPort 3000).OwningProcess | Stop-Process
 
 
